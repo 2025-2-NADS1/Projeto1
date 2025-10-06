@@ -30,4 +30,5 @@ void InitializeComponent()
     this.Text = "MasterScore - Login";
     this.ResumeLayout(false);
     this.PerformLayout();
+    
 }
