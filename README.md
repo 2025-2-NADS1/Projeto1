@@ -14,7 +14,7 @@
 ## Descrição
 
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
+<img src="file:///D:/Downloads/Capa%20de%20trabalho%20de%20história%20A4%20vintage%20.png" alt="NOME DO JOGO" border="0">
   Jogo por: <a href="https://github.com/LeonardoLamar12">Leonardo Lamari</a>, <a href="https://github.com/Juliassilvaa">Julia Silva</a>, <a href="https://github.com/JuliaBasilio16">Julia Basilio</a>, <a href="https://github.com/MariaEduardaOlo">Maria Eduarda Olo</a>
 </p>
 
