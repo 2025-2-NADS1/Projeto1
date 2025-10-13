@@ -40,3 +40,5 @@ Aqui estão as referências usadas no projeto.
 1.<a href="https://about.triviacrack.com">Perguntados</a>
 <br>
 2.<a href="https://www.showdomilhao.com.br">Show do Milhão</a>
+<br>
+3.<a href="https://kahoot.com">Kahoot</a>
