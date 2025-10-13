@@ -37,6 +37,7 @@ Utilize o link <https://chooser-beta.creativecommons.org/> para fazer uma licen�
 ## 🎓 Referências
 
 Aqui estão as referências usadas no projeto.
-<b></b>
+<br>
 1.<a href="https://about.triviacrack.com">Perguntados</a>
+<br>
 2.<a href="https://www.showdomilhao.com.br">Show do Milhão</a>
