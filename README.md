@@ -10,8 +10,7 @@
 
 ## Integrantes: <a href="https://github.com/LeonardoLamar12">Leonardo Lamari</a>, <a href="https://github.com/Juliassilvaa">Julia Silva</a>, <a href="https://github.com/JuliaBasilio16">Julia Basilio</a>, <a href="https://github.com/MariaEduardaOlo">Maria Eduarda Olo</a>
 
-## Professores Orientadores: <a href="">Victor Rossetti</a>, <a href="">Ronaldo Savino</a>, <a href="">Lucy Tabuti</a>, <a href="">Aimar Martins</a>, <a href="">Renata Muniz</a>,<a href=""> Ronaldo Araujo </a>
-
+## Professores Orientadores: Victor Rossetti, Ronaldo Savino, Lucy Tabuti. Aimar Martins, Renata Muniz, Ronaldo Araujo
 ## Descrição
 
 <p align="center">
