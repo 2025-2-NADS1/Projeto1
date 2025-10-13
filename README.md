@@ -14,7 +14,7 @@
 ## Descrição
 
 <p align="center">
-<img src="file:///D:/Downloads/Capa%20de%20trabalho%20de%20história%20A4%20vintage%20.png" alt="NOME DO JOGO" border="0">
+<img src="https://github.com/2025-2-NADS1/Projeto1/blob/main/src/Capa%20de%20trabalho%20de%20hist%C3%B3ria%20A4%20vintage%20.png" alt="NOME DO JOGO" border="0">
   Jogo por: <a href="https://github.com/LeonardoLamar12">Leonardo Lamari</a>, <a href="https://github.com/Juliassilvaa">Julia Silva</a>, <a href="https://github.com/JuliaBasilio16">Julia Basilio</a>, <a href="https://github.com/MariaEduardaOlo">Maria Eduarda Olo</a>
 </p>
 
