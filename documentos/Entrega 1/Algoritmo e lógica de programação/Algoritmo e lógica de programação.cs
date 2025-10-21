@@ -95,7 +95,7 @@ class Program
             }
             else
             {
-                senha += tecla.KeyChar;
+                senha = senha + tecla.KeyChar;
                 Console.Write("*");
             }
         }
