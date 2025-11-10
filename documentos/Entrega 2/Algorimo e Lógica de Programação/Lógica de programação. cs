@@ -1,0 +1,387 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            Console.Clear();
+            Console.WriteLine("--- MasterScore ---");
+            Console.WriteLine("\n--- Escolha uma categoria ---");
+            Console.WriteLine("\n1. Matematica Financeira");
+            Console.WriteLine("2. História");
+            Console.WriteLine("3. Cultura");
+            Console.WriteLine("4. Mix");
+            Console.WriteLine("5. Sair");
+
+            Console.WriteLine("\nDigite o número que corresponde a sua categoria de escolha: ");
+
+            var opcao = Console.ReadLine();
+
+            switch (opcao)
+            {
+                case "1":
+                    MatematicaFinanceira();
+                    break;
+                case "2":
+                    Historia();
+                    break;
+                case "3":
+                    Cultura();
+                    break;
+                case "4":
+                    Mix();
+                    break;
+                case "5":
+                    return;
+                default:
+                    Console.WriteLine("Opção inválida.");
+                    Console.ReadKey();
+                    break;
+            }
+        }
+    }
+
+    static void ExibirPergunta(string pergunta, string opcaoA, string opcaoB, string opcaoC, string opcaoD, string respostaCorreta)
+    {
+        bool correta = false;
+        while (!correta)
+        {
+            Console.Clear();
+            Console.WriteLine("Você escolheu a categoria!");
+            Console.WriteLine(pergunta);
+            Console.WriteLine("\nOpção a) " + opcaoA);
+            Console.WriteLine("Opção b) " + opcaoB);
+            Console.WriteLine("Opção c) " + opcaoC);
+            Console.WriteLine("Opção d) " + opcaoD);
+            Console.WriteLine("\nDigite a opção que corresponde a resposta:");
+
+            string resposta = Console.ReadLine();
+
+            if (resposta == respostaCorreta)
+            {
+                Console.WriteLine("Parabéns! Você acertou +10 pontos");
+                Console.ReadKey();
+                correta = true;
+            }
+            else
+            {
+                Console.WriteLine("Resposta incorreta :( ");
+                Console.WriteLine("Tente novamente.");
+                Console.ReadKey();
+            }
+        }
+    }
+
+    static void MatematicaFinanceira()
+    {
+        Console.Clear();
+        Console.WriteLine("Você escolheu Matemática Financeira!");
+
+        ExibirPergunta
+        (
+            "\nPergunta 1: \nVocê aplica R$ 500 a uma taxa de 2 por cento ao mês durante 4 meses. Qual será o valor dos juros no final desse período?",
+            "R$ 40", "R$ 42", "R$ 44", "R$ 45",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 2: \nUm capital de R$ 2.000 tornou-se R$ 3.000 a uma taxa de 1,5 por cento ao mês. Aproximadamente, quanto tempo esse valor ficou aplicado?",
+            "20 meses", "22 meses", "25 meses", "24 meses",
+            "d"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 3: \nUm título de R$ 1.000 será pago daqui a 3 meses. Se for aplicado um desconto simples de 5 por cento ao mês, qual será o valor descontado?",
+            "R$ 50", "R$ 150", "R$ 200", "R$ 180",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 4: \nVocê deseja ter R$ 5.000 em 10 meses aplicando em juros compostos a uma taxa de 1,8 por cento ao mês. Qual deve ser o valor presente (investimento inicial)?",
+            "R$ 4.600", "R$ 4.580", "R$ 4.500", "R$ 4.550",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 5: \nSe um capital de R$ 1.200 rende R$ 36 de juros simples em um mês, qual é a taxa de juros aplicada?",
+            "2%", "3%", "4%", "5%",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 6: \nUm investimento rende juros simples de 1,5 por cento ao mês. Qual será o montante após 6 meses para um capital inicial de R$ 800?",
+            "R$ 872", "R$ 876", "R$ 880", "R$ 890",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 7: \nVocê aplica R$ 1.000 a uma taxa de 2 por cento ao mês. Quanto terá acumulado ao final de 8 meses?",
+            "R$ 1.160", "R$ 1.170", "R$ 1.173", "R$ 1.180",
+            "c"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 8: \nUm investimento de R$ 900 gerou R$ 135 de juros simples. Sabendo que a taxa mensal é de 3 por cento, por quantos meses o dinheiro ficou aplicado?",
+            "4 meses", "5 meses", "6 meses", "7 meses",
+            "c"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 9: \nUma aplicação rende 24 por cento ao ano no regime de juros compostos. Qual é a taxa equivalente mensal aproximada?",
+            "1,8%", "2%", "2,2%", "2,5%",
+            "a"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 10: \nInvestimento A rende 1,2 por cento ao mês com juros simples. Investimento B rende 1 por cento ao mês com juros compostos. Após 12 meses, qual deles oferece maior montante?",
+            "Investimento A", "Investimento B", "Ambos iguais", "Depende da aplicação",
+            "a"
+        );
+
+        Console.ReadKey();
+    }
+
+    static void Historia()
+    {
+        Console.Clear();
+        Console.WriteLine("Você escolheu História!");
+
+        ExibirPergunta
+        (
+            "\nPergunta 1: \nQuem foi o primeiro presidente do Brasil?",
+            "Getúlio Vargas", "Marechal Deodoro da Fonseca", "Juscelino Kubitschek", "Dom Pedro II",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 2: \nEm que ano terminou a Segunda Guerra Mundial?",
+            "1944", "1945", "1939", "1942",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 3: \nQual civilização construiu as pirâmides do Egito?",
+            "Sumérios", "Maias", "Egípcios", "Romanos",
+            "c"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 4: \nQual foi a principal causa da Revolução Francesa?",
+            "Crise econômica e social", "Descoberta da América", "Revolta industrial", "Guerras Napoleônicas",
+            "a"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 5: \nQuem foi o líder da Independência do Brasil?",
+            "Dom Pedro I", "Tiradentes", "Getúlio Vargas", "José Bonifácio",
+            "a"
+        );
+
+        ExibirPergunta
+        (
+        "\nPergunta 6: \nQual tratado marcou o fim da Primeira Guerra Mundial?",
+        "Tratado de Versalhes", "Tratado de Paris", "Tratado de Tordesilhas", "Tratado de Utrecht",
+        "a"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 7: \nQuem liderou a Revolução Russa de 1917?",
+            "Lenin", "Stalin", "Trotsky", "Czar Nicolau II",
+            "a"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 8: \nQual era o objetivo do movimento Iluminista?",
+            "Promover o absolutismo", "Defender a fé cega", "Promover a razão e ciência", "Fortalecer monarquias",
+            "c"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 9: \nQuando foi proclamada a República no Brasil?",
+            "1889", "1822", "1891", "1870",
+            "a"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 10: \nQual era a principal característica da Revolução Industrial?",
+            "Produção manual", "Produção mecanizada", "Uso de energia solar", "Agricultura intensiva",
+            "b"
+        );
+
+        Console.ReadKey();
+    }
+
+    static void Cultura()
+    {
+        Console.Clear();
+        Console.WriteLine("Você escolheu Cultura!");
+
+        ExibirPergunta
+        (
+            "\nPergunta 1: \nQuem pintou a obra Mona Lisa?",
+            "Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo",
+            "c"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 2: \nQual é o estilo musical de origem afro-americana que influenciou o jazz?",
+            "Blues", "Samba", "Fado", "Rock",
+            "a"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 3: \nQuem escreveu 'Dom Casmurro'?",
+            "Machado de Assis", "José de Alencar", "Jorge Amado", "Clarice Lispector",
+            "a"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 4: \nQual dança é típica do Brasil e reconhecida internacionalmente?",
+            "Samba", "Tango", "Flamenco", "Fandango",
+            "a"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 5: \nQual artista é conhecido por esculturas como 'O Pensador'?",
+            "Michelangelo", "Auguste Rodin", "Pablo Picasso", "Leonardo da Vinci",
+            "b"
+        );
+        ExibirPergunta
+        (
+            "\nPergunta 6: \nQual movimento artístico é caracterizado pelo uso de cores vibrantes e pinceladas soltas?",
+            "Impressionismo", "Cubismo", "Surrealismo", "Expressionismo",
+            "a"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 7: \nQuem escreveu a obra 'Cem Anos de Solidão'?",
+            "Mario Vargas Llosa", "Gabriel García Márquez", "Pablo Neruda", "Jorge Amado",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 8: \nQual é a dança tradicional da Argentina reconhecida mundialmente?",
+            "Samba", "Tango", "Flamenco", "Salsa",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 9: \nO que caracteriza o Surrealismo na arte?",
+            "Retratos realistas", "Exploração do subconsciente e sonhos", "Pintura de paisagens", "Escultura clássica",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 10: \nQual compositor é conhecido como o 'Pai da Música Clássica Alemã'?",
+            "Bach", "Mozart", "Beethoven", "Vivaldi",
+            "c"
+        );
+
+        Console.ReadKey();
+    }
+
+    static void Mix()
+    {
+        Console.Clear();
+        Console.WriteLine("Você escolheu Mix!");
+
+        ExibirPergunta
+        (
+            "\nPergunta 1: \nEm que ano aconteceu a Independência do Brasil?",
+            "1808", "1822", "1500", "1502",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 2: \nQual é o maior planeta do Sistema Solar?",
+            "Terra", "Júpiter", "Saturno", "Marte",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 3: \nQual é o rio mais longo do mundo?",
+            "Nilo", "Amazonas", "Yangtzé", "Mississippi",
+            "a"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 4: \nQuem escreveu 'Hamlet'?",
+            "Victor Hugo", "William Shakespeare", "Goethe", "Cervantes",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 5: \nQual país é conhecido como o 'País do Sol Nascente'?",
+            "China", "Japão", "Coreia do Sul", "Tailândia",
+            "b"
+        );
+        ExibirPergunta
+        (
+        "\nPergunta 6: \nQual é o elemento químico mais abundante no universo?",
+        "Oxigênio", "Hidrogênio", "Carbono", "Nitrogênio",
+        "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 7: \nQuem é considerado o pai da Teoria da Relatividade?",
+            "Newton", "Einstein", "Galileu", "Tesla",
+            "b"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 8: \nEm qual continente está localizado o deserto do Saara?",
+            "África", "Ásia", "América do Norte", "Austrália",
+            "a"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 9: \nQual é o planeta mais próximo do Sol?",
+            "Mercúrio", "Vênus", "Terra", "Marte",
+            "a"
+        );
+
+        ExibirPergunta
+        (
+            "\nPergunta 10: \nQual país inventou o papel?",
+            "Egito", "China", "Grécia", "Roma",
+            "b"
+        );
+
+        Console.ReadKey();
+    }
+}
