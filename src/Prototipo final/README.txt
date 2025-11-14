@@ -8,3 +8,5 @@ Abra o arquivo >> MasterScore.sln<< no Visual Studio e altere a variavel do
 caminho para o banco de dados chamado >>caminhoDB<< para o 
 arquivo >>MasterScore.db<<, que está dentro da pasta junto com o sln, e 
 execute a solução
+
+Na tela de Login, use "Leo" como usuario e "Leo123" como senha
